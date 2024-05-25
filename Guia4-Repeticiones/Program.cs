@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,6 +27,52 @@ namespace Guia4_Repeticiones
             }
             Console.ReadLine(); 
             */
-        }
+            /*
+             *2. Carga y suma de 10 valores 
+             *Objetivo: Desarrollar un programa que permita la carga de 10 valores por teclado 
+             *y nos muestre posteriormente la suma de los valores ingresados y su promedio.
+            */
+            /*
+            int cantIngresados = 1;
+            int acumulador = 0;
+            double promedio;
+            int valor;
+
+            while (cantIngresados <= 10) {
+                Console.WriteLine($"Ingrese un valor numero {cantIngresados}");
+                valor = int.Parse(Console.ReadLine());
+                acumulador = acumulador + valor;
+                cantIngresados++;
+                    }
+            promedio = acumulador / 10;
+            Console.WriteLine($"Promedio: {promedio}");
+            Console.ReadLine();
+            */
+            /*
+             * 3. Fabrica de perfiles 
+             * Objetivo: Una planta que fabrica perfiles de hierro posee un lote de piezas.
+             * Confeccionar un programa que pida ingresar por teclado la cantidad de piezas a procesar 
+             * y luego ingrese la longitud de cada perfil; sabiendo que la pieza cuya longitud este 
+             * comprendida en el rango de 1,20 y 1,30 son aptas. Imprimir por pantalla la cantidad
+             * de piezas aptas que hay en el lote.
+            */
+            int contador = 1;
+            int cantPiezasAptas = 0;
+            int cantPiezas; 
+            double medida;
+            Console.WriteLine("Ingrese cantidad de piezas a analizar");
+            cantPiezas = int.Parse(Console.ReadLine());
+            while (contador <= cantPiezas) {
+                Console.WriteLine($"Ingrese medida de la pieza numero {contador}");
+                medida = double.Parse(Console.ReadLine());
+                if (medida >=1.2 && medida <= 1.3)
+                {
+                    cantPiezasAptas++;
+                }
+                contador++;
+            }
+            Console.WriteLine($"La cantidad de piezas aptas es {cantPiezasAptas}");
+            Console.ReadLine();
+        }// static Void 
     }
 }
