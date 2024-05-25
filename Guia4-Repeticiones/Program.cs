@@ -56,6 +56,7 @@ namespace Guia4_Repeticiones
              * comprendida en el rango de 1,20 y 1,30 son aptas. Imprimir por pantalla la cantidad
              * de piezas aptas que hay en el lote.
             */
+            /*
             int contador = 1;
             int cantPiezasAptas = 0;
             int cantPiezas; 
@@ -72,6 +73,33 @@ namespace Guia4_Repeticiones
                 contador++;
             }
             Console.WriteLine($"La cantidad de piezas aptas es {cantPiezasAptas}");
+            */
+            /*
+             * 4.Nota de alumnos 
+             * Objetivo: Escribir un programa que solicite ingresar 10 notas de alumnos 
+             * y nos informe cuantos tienen notas mayores o iguales a 7 y cuantos menores.   
+            */
+            /*
+            int notasMayoresIguales = 0, notasMenores = 0;
+            int nota;
+            int contador = 1;
+            while (contador <= 10) 
+            {
+                Console.WriteLine($"Ingrese nota {contador}");
+                nota = int.Parse(Console.ReadLine());
+                if (nota < 7)
+                {
+                    notasMenores++;
+                }
+                else
+                {
+                    notasMayoresIguales++;
+                }
+                contador++;
+            }
+            Console.WriteLine($"Cantidad de notas mayores o iguales a 7: {notasMayoresIguales}");
+            Console.WriteLine($"Cantidad menores a 7: {notasMenores}");
+            */
             Console.ReadLine();
         }// static Void 
     }
