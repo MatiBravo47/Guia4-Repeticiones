@@ -152,6 +152,72 @@ namespace Guia4_Repeticiones
             Console.WriteLine($"Sueldos mayores a 300: {cuentaMayores}");
             Console.WriteLine($"Sueldos menores de 300: {cuentaMenores300}");
             */
+            /*
+             * Terminos de la serie
+             * Objetivo: Realizar un programa que imprima 25 terminos de la serie 
+             * 11 - 22- 33 - 44, etc. (No se ingresan valores por teclado) 
+            */
+            /*
+            int n = 25, numeroSerie = 0;
+            int contador = 1;
+            while (contador <= n)
+            {
+                numeroSerie = numeroSerie + 11;
+                Console.WriteLine(numeroSerie);
+                contador++;
+            }
+            */
+            /*
+             * 8. Multiplos de 8
+             * Objetivo: Mostrar los multiplocs de 8 hasta el valor 500.
+             * Debe aparecer en pantalla 8 - 16 - 24,etc
+            */
+            /*
+            int multiplo = 8;
+            int contador = 2;
+            while (multiplo <= 500)
+            {
+                Console.WriteLine(multiplo);
+                multiplo = 8 * contador;
+                contador++;
+            }
+            */
+            /*
+             * 9. Listas de valores 
+             * Objetivo: Realizar un programa que permita cargar dos listas de 15 valores cada una. 
+             * Informar con un mensaje cual de las dos listas tiene un valor acumulado mayor
+             * (mensajes "Lista 1 mayor", "Lista 2 mayor","Listas iguales").
+            */
+            /*
+            int sumaLista1 = 0, sumaLista2 = 0, contador = 1;
+            int n = 15;
+            int valor;
+            while (contador <= 30)
+            {
+                Console.WriteLine($"Ingrese valor {contador}");
+                valor = int.Parse( Console.ReadLine() );
+                if (contador <= 15)
+                {
+                    sumaLista1 = sumaLista1 + valor;
+                }
+                else
+                {
+                    sumaLista2 = sumaLista2 + valor;
+                }
+                contador++;
+            }
+            if (sumaLista1 > sumaLista2)
+            {
+                Console.WriteLine("Lista 1 mayor");
+            }
+            else if (sumaLista1 < sumaLista2)
+            {
+                Console.WriteLine("Lista 2 mayor");
+            } else
+            {
+                Console.WriteLine("Listas iguales");
+            }
+            */
             Console.ReadLine();
         }// static Void 
     }
