@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
+using System.Net.Security;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -99,6 +100,57 @@ namespace Guia4_Repeticiones
             }
             Console.WriteLine($"Cantidad de notas mayores o iguales a 7: {notasMayoresIguales}");
             Console.WriteLine($"Cantidad menores a 7: {notasMenores}");
+            */
+            /*
+             * Alturas de personas 
+             * Objetivo: Se ingresan un conjunto de n alturas de personas por teclado. 
+             * Mostrar la altura promedio de las personas 
+            */
+            /*
+            int contador = 1;
+            int n;
+            double altura;
+            double sumaAlturas = 0;
+            Console.WriteLine("Ingrese cantidad de personas");
+            n = int.Parse(Console.ReadLine());
+            while (contador <= n) 
+            {
+                Console.WriteLine($"Ingrese altura de las persona {contador}");
+                altura = double.Parse(Console.ReadLine());
+                sumaAlturas = sumaAlturas + altura;
+                contador++;
+            }
+            Console.WriteLine("El promedio es: " + sumaAlturas / n);  
+            */
+            /*
+             * 7. Lectura de sueldos
+             * Objetivo: En una empresa trabajan n empleados cuyos sueldos oscilan entre $100 y $500,
+             * realizar un programa que lea los sueldos que cobra cada empleado e informe cuantos empleados 
+             * cobran entre $100 y $300 y cuantos cobras mas de $300. Ademas el programa debera informar el importe 
+             * que gasta la empresa en sueldos al personal.
+            */
+            /*
+            int n, sueldo, cuentaMenores300 = 0, cuentaMayores = 0, sumaSueldos = 0, contador = 1;
+            Console.WriteLine("Ingrese cantidad de empleados");
+            n = int.Parse(Console.ReadLine());
+            while (contador <= n) 
+            {
+                Console.WriteLine($"Ingrese sueldo empleado {contador}");
+                sueldo = int.Parse(Console.ReadLine());
+                if (sueldo > 300) 
+                {
+                    cuentaMayores++;
+                }
+                else
+                {
+                    cuentaMenores300++;
+                }
+                sumaSueldos = sumaSueldos + sueldo;
+                contador++;
+            }
+            Console.WriteLine($"La empresa gasta en empleados:{sumaSueldos}");
+            Console.WriteLine($"Sueldos mayores a 300: {cuentaMayores}");
+            Console.WriteLine($"Sueldos menores de 300: {cuentaMenores300}");
             */
             Console.ReadLine();
         }// static Void 
