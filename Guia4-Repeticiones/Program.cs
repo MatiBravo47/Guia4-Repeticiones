@@ -218,6 +218,35 @@ namespace Guia4_Repeticiones
                 Console.WriteLine("Listas iguales");
             }
             */
+            /*
+             * 10. Lectura de sueldos
+             * Objetivo: Desarrollar un programa que permita cargar n numeros enteros
+             * y luego nos informe cuantos valores fueron pares y cuantos impares.
+             * Emplear el operador "%" en la condicion de la estructura condicional:
+             *  if (valor%2==0) //Si el if da verdadero luego es par.
+            */
+            /*
+            int cantPares = 0, cantImpares = 0, contador = 1;
+            int n, valor;
+            Console.WriteLine("Ingrese cantidad de numeros a ingresar");
+            n = int.Parse(Console.ReadLine());
+            while (contador <= n) 
+            {
+                Console.WriteLine("Ingrese valor");
+                valor = int.Parse(Console.ReadLine());
+                if (valor%2 == 0) 
+                {
+                    cantPares++;
+                }
+                else 
+                {
+                    cantImpares++;
+                }
+                contador++;
+            }
+            Console.WriteLine($"Cantidad pares: {cantPares}");
+            Console.WriteLine($"Cantidad pares: {cantImpares}");
+            */
             Console.ReadLine();
         }// static Void 
     }
